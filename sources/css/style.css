@@ -1,0 +1,504 @@
+        @import url('https://fonts.googleapis.com/css?family=Play:400,700|Titillium+Web:300,400,700');
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        ol,
+        ul,
+        button {
+            font-family: 'Titillium Web', sans-serif, helvetica;
+        }
+        /* basic */
+        
+        .container {
+            width: 1440px;
+            margin: auto;
+        }
+        
+        .full {
+            width: 100%;
+        }
+        
+        .relative {
+            position: relative;
+        }
+        
+        .padding {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        
+        .cushion {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        
+        .textRight {
+            text-align: right;
+        }
+        /* grid */
+        
+        .col-2 {
+            width: calc(100% / 2);
+        }
+        
+        .col-3 {
+            width: calc(100% / 3);
+        }
+        
+        .col-4 {
+            width: calc(100% / 4);
+        }
+        
+        .col-4-3 {
+            width: calc(100% / 4 * 3);
+        }
+        
+        .col-5 {
+            width: calc(100% / 5);
+        }
+        
+        .col-6 {
+            width: calc(100% / 6);
+        }
+        
+        .col-7 {
+            width: calc(100% / 7);
+        }
+        
+        .col-8 {
+            width: calc(100% / 8);
+        }
+        
+        .col-9 {
+            width: calc(100% / 9);
+        }
+        
+        .col-10 {
+            width: calc(100% / 10);
+        }
+        /* Button */
+        
+        .button {
+            width: 800px;
+            height: 200px;
+            display: block;
+            margin: auto;
+            background: #3b8e68;
+            border: none;
+            font-size: 50px;
+            color: white;
+        }
+        /* clear */
+        
+        .clear:after {
+            display: table;
+            content: "";
+            clear: both;
+        }
+        
+        .floatLeft {
+            float: left;
+        }
+        
+        .floatRight {
+            float: right;
+        }
+        
+        .clear::after {
+            display: table;
+            content: "";
+            clear: both;
+        }
+        /*  Navigatioin */
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            background: #333;
+            z-index: 9999;
+        }
+        
+        nav ul {
+            padding-left: 0;
+            list-style: none;
+            display: grid;
+        }
+        
+        nav li {
+            text-align: center;
+            margin-top: -20px;
+        }
+        
+        nav li:after {
+            content: "";
+            display: table;
+            height: 1px;
+            background: #444;
+            width: 70%;
+            margin: auto;
+            margin-top: 40px;
+        }
+        
+        nav li:first-child:after,
+        nav li:last-child:after {
+            background: none;
+        }
+        
+        nav li h2 {
+            font-size: 40px;
+            color: #da5a50;
+        }
+        
+        nav li h3 {
+            font-size: 25px;
+            color: #3b8e68;
+        }
+        
+        nav a {
+            font-size: 25px;
+            color: #da5a50;
+            text-decoration: none;
+        }
+        
+        nav .logo {
+            height: 150px;
+            width: 150px;
+            margin: 0 auto 40px;
+        }
+        /* Input box and List */
+        
+        main {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        
+        #inputList {
+            position: fixed;
+            top: 0;
+            right: 95px;
+            width: calc(100% / 4 * 3 - 95px);
+            height: 100px;
+            font-size: 60px;
+            padding: 20px;
+            background: white;
+            z-index: 999;
+            ;
+        }
+        
+         ::placeholder {
+            color: #999;
+        }
+        
+        #inputField #submit {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 120px;
+            background: #3b8e68;
+            border: none;
+            font-size: 80px;
+            margin-top: -20px;
+            color: white;
+            transition: .4s ease-in-out;
+            padding: 0;
+            z-index: 999;
+        }
+        
+        #inputList #submit:hover {
+            background: #56b48a;
+        }
+        
+        #inputList #submit>div {
+            width: 60%;
+            height: 60%;
+            border-radius: 50%;
+            border: 1px solid white;
+            margin: auto;
+        }
+        
+        main #guestWindow {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            height: 40vh;
+        }
+        
+        main h2 {
+            text-align: center;
+        }
+        /* Guest Input */
+        
+        .guest {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: calc(100vh + 30px);
+            background: #333;
+            transition: .8s ease-in-out;
+            border-left: 1px solid #444;
+            z-index: 999;
+        }
+        
+        .guest .guestArea {
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .guestArea #close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: #da776f;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            transition: .4s ease-in-out;
+        }
+        
+        .guestArea #close:hover {
+            background: #f58e87;
+        }
+        
+        .guestArea h2 {
+            color: #3b8e68;
+            font-size: 2.5rem;
+            margin: 0;
+            padding: 10px 0;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: 0;
+        }
+        
+        .guestInput {
+            padding: 20px 20px 20px 150px;
+            box-sizing: border-box;
+        }
+        
+        .guestInput label {
+            display: block;
+            color: #33bb88;
+            font-size: 1.6rem;
+            font-family: 'Titillium Web', sans-serif, helvetica;
+        }
+        
+        .guestInput input {
+            width: 80%;
+            height: 50px;
+            margin: 10px 0 20px;
+            font-size: 1.3rem;
+        }
+        
+        #addGuest {
+            width: 30%;
+            display: block;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        button:focus {
+            outline: none;
+        }
+        
+        button {
+            padding: 5px 15px;
+            background: #da776f;
+            border: 0 none;
+            cursor: pointer;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.3rem;
+            transition: .4s ease-in-out;
+        }
+        
+        button:hover {
+            background: #f58e87;
+        }
+        /* Guest Window */
+        
+        .list {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: calc(100vh + 30px);
+            background: #fff;
+            transition: .8s ease-in-out;
+            border-left: 1px solid #444;
+            z-index: 999;
+            border-right: 1px solid #444;
+            box-sizing: border-box;
+        }
+        
+        .list .inputWindow {
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .inputWindow #thisclose {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: #da776f;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3.5rem;
+            transition: .4s ease-in-out;
+            border-right: 1px solid #444;
+            box-sizing: border-box;
+        }
+        
+        .inputWindow #close:hover {
+            background: #f58e87;
+        }
+        
+        .inputWindow h2 {
+            color: #3b8e68;
+            font-size: 2.5rem;
+            margin: 0;
+            padding: 10px 0;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: 0;
+        }
+        
+        .guestCard {
+            border: 1px solid #dddddd;
+            border-radius: 3px;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+        
+        .guestCard .pic {
+            padding: 10px;
+        }
+        
+        .guestCard .serial {
+            text-align: center;
+            color: #999;
+        }
+        
+        .guestCard input[type=checkbox] {
+            margin-right: 10px;
+        }
+        
+        .premiumGuest {
+            border: 5px solid #da776f;
+        }
+        
+        .premiumGuest::after {
+            display: table;
+            content: "PREMIUM";
+            background: #da776f;
+            margin-left: -20px;
+            margin-bottom: -20px;
+            padding: 10px;
+        }
+        
+        #fName,
+        #lName,
+        #idNumber {
+            box-sizing: border-box;
+        }
+        /* Inventory */
+        
+        .results {
+            position: absolute;
+            top: 105px;
+            left: 0;
+            overflow-y: scroll;
+        }
+        
+        .results .card {
+            border: 1px solid #ddd;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 3px;
+        }
+        
+        .results .card .crop {
+            height: 230px;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .results .card .crop img {
+            width: 80%;
+            padding: 0 10%;
+            background-size: contain;
+            vertical-align: middle;
+        }
+        
+        .results .card h3 {
+            height: 100px;
+        }
+        
+        .results .card .fine {
+            height: 15px;
+            font-size: .8rem !important;
+        }
+        
+        .results .card b {
+            color: #3b8e68;
+            height: 24px;
+            font-size: 1.3rem;
+        }
+        
+        .results .card .red b {
+            color: #da776f;
+            height: 24px;
+            font-size: 1.3rem;
+        }
+        
+        .results .card .red b::before {
+            content: "Premium: ";
+        }
+        
+        .results .card .quantity {
+            width: 100%;
+            height: 30px;
+        }
+        
+        .results .card .quantity button {
+            padding: 5px;
+            width: 15%;
+            background: #da776f;
+            color: #fff;
+            border: none;
+        }
+        
+        .results .card .quantity button:focus {
+            outline: none;
+        }
+        
+        .results .card .quantity input {
+            width: 67.9%;
+            height: 40px;
+            text-align: center;
+            border: none;
+        }
+        
+        input:focus {
+            outline: none;
+        }

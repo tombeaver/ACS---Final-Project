@@ -1,0 +1,11 @@
+Final Project for my advanced client side class for school.  It was infact several smaller assignments that was assigned throughout the semester and brought together to emulate the Agile Workflow process as we might see it in the workplace.
+
+The first of the assignments was to create a calculator which was reused as a simple price incrementor for the products selected.
+The second assignment was a converter, which converted temperatures from celcius to fahrenheit and vice versa.  ** This was not included in the final project but I think it would be a simple addition if I ever wanted to add it in **
+The third assignment was to create a to do list that the user can enter a task in the top search field and each item would be placed into an array and each have a corresponding "checkoff" method that would remove item from array and place into a "done" array of sorts.  Not only would the user be able to keep track of his/her tasks, but the program would not allow duplicate entries. This assignment was reused in the final project as a way to ensure there were not duplicate guests or clients added to the pages guest list.
+The fourth assignment was to create a product seach results page on an ecommerce site, using object literals as the soucre of the product details and information.  This was used in the final project as the meat and bones of the main project.
+The fifth and last assignment was to create an add client/profile page and display information on page using object notation and passing input values to instansiate data to the page.  This was used in the final project in conjunction with the third assignment to create an array of guests /clients and ensure no duplicate id numbers were used.
+
+Each assignment was given two weeks to complete to emulate a two week sprint and they all came together easily and it was pretty cool to do school work like this.
+
+The Final Project was given to be completed in less than a week, but had the students in the class kept up with thier work throughout the semester, all what was needed was to plug the js code of each assignment into main.js of the project file and make a few adjustments to make it work.  I was able to finish this project easily and with very little complications.

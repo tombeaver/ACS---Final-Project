@@ -1,0 +1,89 @@
+<!doctype>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="sources/css/style.css" />
+</head>
+
+<body>
+    <nav class="col-4">
+        <ul>
+            <li class="logo"><img src="sources/img/logo.svg" /></li>
+            <li>
+                <a class="new" id="new" href="#newGuest">New Guest</a><br />
+                <a class="guestList" id="guestList" href="#guestList">Guest List</a>
+            </li>
+            <li class="standard">
+                <h2>0</h2>
+                <h3>Standard Members</h3>
+            </li>
+            <li class="premium">
+                <h2>0</h2>
+                <h3>Premium Members</h3>
+            </li>
+            <li class="total">
+                <h2>0</h2>
+                <h3>TOTAL Members</h3>
+            </li>
+        </ul>
+    </nav>
+    <div class="relative" id="inputField">
+        <input type="text" name="inputList" id="inputList" placeholder="Enter Item Here" />
+        <input type="submit" id="submit" value="o" />
+    </div>
+    <main class="col-4-3">
+        <div class="guest">
+            <div class="guestArea relative">
+                <div id="close">
+                    <p>X</p>
+                </div>
+                <h2>New Guest Account</h2>
+                <div class="guestInput">
+                    <div class="col-2 floatLeft">
+                        <label>First Name</label><input type="text" name="fName" id="fName" value="Tom" />
+                    </div>
+                    <div class="col-2 floatLeft">
+                        <label>Last Name</label><input type="text" name="lName" id="lName" value="Beaver" /><br />
+                    </div>
+                    <div class="col-2 ">
+                        <label>Eight Digit ID Number</label><input type="number" name="idNumber" id="idNumber" value="00266630" /><br />
+                    </div>
+                    <div class="col-2 floatLeft">
+                        <label>Email Address</label><input type="email" name="email" id="email" value="tombever22@gmail.com" /><br />
+                    </div>
+                    <div class="col-2 floatLeft">
+                        <label>Phone</label><input type="tel" name=telephone id="telephone" value="407-922-5191" /><br />
+                    </div>
+                    <div class="col-2">
+                        <label>Date of Birth</label><input type="date" name="date" id="date" value="1984-05-13" />
+                    </div>
+                    <div class="col-2">
+                        <label>Upload Profile Image</label><input type="file" name="pic[]" accept="image/*" />
+                    </div>
+                </div>
+                <button id="addGuest">Add Guest</button>
+            </div>
+        </div>
+        <div class="list">
+            <div class="inputWindow relative">
+                <div id="thisclose">
+                    <p>X</p>
+                </div>
+                <h2>Guest List</h2>
+                <div id="guestWindow"></div>
+            </div>
+        </div>
+        <div class="results relative">
+            <div class="output"></div>
+        </div>
+    </main>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="sources/js/main.js"></script>
+</body>
+
+</html>
